@@ -1,0 +1,50 @@
+.list {
+  list-style: none;
+  width: 17rem;
+  height: 86vh;
+  overflow-y: scroll;
+
+  .item {
+    // margin: 1rem 0;
+  }
+
+  .link {
+    font-size: .8rem;
+    font-weight: 300;
+    padding: .7rem 1.5rem;
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    background-image: -webkit-linear-gradient(
+      330deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+    background-image: -o-linear-gradient(
+      330deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+    background-image: linear-gradient(
+      120deg,
+      transparent 0%,
+      transparent 50%,
+      #fff 50%
+    );
+    background-size: 220%;
+    -webkit-transition: all 0.4s;
+    -o-transition: all 0.4s;
+    transition: all 0.4s;
+    display: block;
+
+    &:hover {
+      background-position: 100%;
+      -webkit-transform: translateX(-1rem);
+      -ms-transform: translateX(-1rem);
+      transform: translateX(-1rem);
+      color: slategrey;
+    }
+  }
+}

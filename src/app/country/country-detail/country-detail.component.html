@@ -1,0 +1,22 @@
+<div *ngIf="selectedCountry ; else infoText">
+  <h2>{{selectedCountry.name}}</h2>
+  <hr>
+  <div class="details">
+    <div class="row">
+      <p>Capital: {{selectedCountry.capital}}</p>
+      <p>Região: {{selectedCountry.region}}</p>
+      <p>Sub-Região: {{selectedCountry.subregion}}</p>
+      <p>População: {{selectedCountry.population}}</p>
+    </div>
+    <div class="row">
+      <p>Area: {{selectedCountry.area}}</p>
+      <p>Fuso Horário: {{selectedCountry.timezones}}</p>
+      <p>Nome Nativo: {{selectedCountry.nativeName}}</p>
+      <a (click)="toggle()">&rarr; Bandeira</a>
+    </div>
+  </div>
+  <app-country-flag [country]="selectedCountry" *ngIf="show"></app-country-flag>
+</div>
+<ng-template #infoText>
+  <p>Por favor escolha um país</p>
+</ng-template>

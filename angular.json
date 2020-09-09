@@ -123,6 +123,10 @@
           }
         }
       }
-    }},
-  "defaultProject": "developer-challenge"
+    }
+  },
+  "defaultProject": "developer-challenge",
+  "cli": {
+    "analytics": false
+  }
 }
